@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 85%;
+    background-color: black;
+    display: flex;
+    border: 4px solid white;
+    animation: slide infinite 0.90s ease-in;
+}
+
+@keyframes slide {
+    0% {
+        border-top: 4px solid red;
+    }
+
+    25% {
+        border-bottom: 4px solid blue;
+    }
+
+    50% {
+        border-right: 4px solid green;
+    }
+
+    100% {
+        border-left: 4px solid aqua;
+    }
+}
+
+@media (min-width:430px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    }
+
+    .all-songs {
+        height: 600px;
+    }
+
+    .left {
+        width: 55%;
+        height: 100%;
+        /* background-color: red; */
+        /* background-image: url(./images1/garmi.jpeg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-size: 100% 100%;
+
+    }
+
+    .right {
+        width: 45%;
+        height: 100%;
+        /* background-color: maroon; */
+    }
+
+
+    .all-songs {
+        margin-top: 4px;
+        /* border: 1px solid yellow; */
+        height: 490px;
+        padding: 3vh 5vh;
+        overflow: auto;
+    }
+
+    .song-card {
+        border-bottom: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vh 0.5vh;
+    }
+
+    .song-card .part1 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .song-card .part1 img {
+        object-fit: cover;
+        background-position: 100% 100%;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+    .main-control {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .controls {
+        width: 300px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+
+    .backword-control {
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .play-control {
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .forword-control {
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    i {
+        font-size: 25px;
+    }
+
+    i:hover {
+        cursor: pointer;
+    }
+
+    i:active {
+        transform: scale(1.3);
+    }
